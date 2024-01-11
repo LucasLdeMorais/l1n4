@@ -1,0 +1,204 @@
+body {
+    margin: auto auto;
+    height: auto;
+    max-height: 815px;
+    max-width: 815px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    background-color: #231722;
+}
+
+#embrulho-pagina {
+    /* border: 1px solid #FF001C; */
+    border-top: 0px;
+    border-bottom: 0px;
+    width: inherit;
+    height: auto;
+    max-height: 815px;
+    box-shadow: 0px 6px 7px 0px black;
+    background-color: #1f0b0c;
+    position: relative;
+}
+
+header {
+    border-top: 0px;
+    display: block;
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    top: 0;
+    right: 0;
+}
+
+#caixa-logo  {
+    display: block;
+    padding: 15px;
+    padding-bottom: 0;
+    width: 200px;
+    height: fit-content;
+}
+
+#link-logo {
+    display: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+#logo  {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    border-top: 1px solid #FF001C;
+    border-bottom: 1px solid #FF001C;
+    display: block;
+}
+
+#lista-items-navegacao {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#lista-items-navegacao > li {
+    border-right: 1px solid #FF001C;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    color: #FF001C;
+    padding: 0;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+}
+
+#lista-items-navegacao > li :hover{
+    background-color: #FF001C;
+    color: #231722;
+}
+
+#lista-items-navegacao > li > a{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    color: #FF001C;
+    text-decoration: none;
+    padding: 1px 12px 0 9px;
+}
+
+main {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    top: 0;
+    bottom: auto;
+}
+
+#conteudo {
+    width: 100%; 
+    height: fit-content; 
+    min-width: 300px;
+    min-height: 505px;
+    max-height: 475px; 
+    overflow-y: auto;
+    display: inline-flex;
+    
+}
+
+.lateral {
+    color: #FF001C; 
+    border-left: 1px solid #FF001C; 
+    min-width: 200px; 
+    display: inline-flex;
+}
+
+footer {
+    border-top: 1px solid #FF001C;
+    color: #FF001C;
+    font-size: small;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    min-height: 101px;
+}
+
+footer > div {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+footer > div > p:first-of-type{
+    padding: 10px 0 10px 0;
+}
+
+footer > div > *{
+    padding: 0 0 10px 0;
+}
+
+footer > div > p {
+    margin: 0;
+    text-align: center;
+}
+
+footer > div > p:nth-of-type(2){
+    text-align: right;
+}
+
+footer > div > ul {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+}
+
+footer > div > ul > li {
+    display: inline-block;
+    height: fit-content;
+    padding: 0;
+    margin-right: 10px;
+}
+
+footer > div > ul > li > a {
+    color: #FF001C;
+}
+
+/*  Responsividade: Navbar zoa apartir de 451px pra baixo */
+@media screen and (max-width: 583px) {
+    .lateral {
+       display: none;
+    }
+    
+    #caixa-logo {
+        margin: auto auto;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #lista-items-navegacao > li {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    footer > div > *{
+        font-size: smaller;
+    }
+}
