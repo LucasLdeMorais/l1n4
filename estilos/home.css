@@ -17,7 +17,7 @@
 
 .item-atualizacoes-heading {
     border-top: 1px solid #FF001C; 
-    font-size: small;
+    font-size: medium;
     padding: 4px 2px 2px 7px;
     margin: auto;
 }
@@ -43,7 +43,7 @@
     border-bottom: 1px dashed #FF001C;
     display: inline-flex; 
     flex: 0 1 20%;
-    font-size: small;
+    font-size: medium;
 }
 
 .atualizacao a {
