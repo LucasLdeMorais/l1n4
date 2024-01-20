@@ -259,6 +259,11 @@ footer > div > ul > li > a {
         border-bottom: 1px solid #FF001C;
     }
 
+    #lista-items-navegacao > li :hover{
+        background-color: #FF001C;
+        color: #231722;
+    }
+    
     #lista-items-navegacao :nth-child(5){
         border-right: unset;
         padding-right: 1px;
